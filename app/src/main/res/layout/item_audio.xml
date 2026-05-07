@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="#e8f0e9"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Portada del audio -->
+    <ImageView
+        android:id="@+id/img_item_audio"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#dce5de"
+        android:scaleType="centerCrop" />
+
+    <!-- Título del audio -->
+    <TextView
+        android:id="@+id/txt_item_audio_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Título del Audio"
+        android:textColor="#253f2b"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

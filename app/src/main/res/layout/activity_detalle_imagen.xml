@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Fondo negro para que la imagen destaque al máximo -->
+
+    <!-- Imagen a pantalla completa -->
+    <ImageView
+        android:id="@+id/img_detalle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Vista detallada"
+        android:scaleType="fitCenter" />
+
+    <!-- Botón volver -->
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_back"
+        android:scaleType="centerInside"
+        android:contentDescription="Volver"
+        app:tint="#ffffff"
+        android:elevation="4dp" />
+
+</FrameLayout>

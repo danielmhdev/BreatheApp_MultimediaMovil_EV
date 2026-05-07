@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3fbf4">
+
+    <!-- Fondo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.50"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_bosque_background" />
+
+    <!-- Botón volver -->
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Volver"
+        android:elevation="4dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back" />
+
+    <!-- Contenido -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="8dp"
+            android:text="Mi Biblioteca"
+            android:textColor="#4a654f"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:text="Elige tu camino a la calma"
+            android:textColor="#161d19"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_Ir_Audios"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#8daa91"
+            android:text="Sonidos Relajantes"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:cornerRadius="12dp" />
+
+        <Button
+            android:id="@+id/btn_Ir_Videos"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#8daa91"
+            android:text="Vídeos para Meditar"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:cornerRadius="12dp" />
+
+        <Button
+            android:id="@+id/btn_Ir_Galeria"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:backgroundTint="#8daa91"
+            android:text="Paisajes Zen"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+</FrameLayout>

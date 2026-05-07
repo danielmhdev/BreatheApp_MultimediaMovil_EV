@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="#e8f0e9"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- La miniatura del vídeo -->
+    <ImageView
+        android:id="@+id/img_item_video"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#dce5de"
+        android:scaleType="centerCrop" />
+
+    <!-- El título del vídeo -->
+    <TextView
+        android:id="@+id/txt_item_video_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Cargando título..."
+        android:textColor="#253f2b"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

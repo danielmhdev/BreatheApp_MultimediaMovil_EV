@@ -1,0 +1,69 @@
+<!--Usamos un FrameLayout como base para poner una imagen de fondo.-->
+<!--Usamos res-auto para poder usar cornerRadious y hacer los botones más bonitos.-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3fbf4"> <!-- Color pastel  -->
+
+    <!-- Fondo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.50"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_bosque_background" />
+
+    <!-- Contenido -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Breathe"
+            android:textColor="#4a654f"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <!-- Subtítulo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="64dp"
+            android:text="Encuentra tu centro.\nUnos minutos pueden cambiar tu día."
+            android:textAlignment="center"
+            android:textColor="#161d19"
+            android:textSize="18sp" />
+
+        <!-- Botón Biblioteca -->
+        <Button
+            android:id="@+id/btn_biblioteca"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#8daa91"
+            android:text="Biblioteca Multimedia"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:cornerRadius="12dp" />
+
+        <!-- Botón Meditación -->
+        <Button
+            android:id="@+id/btn_meditacion"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:backgroundTint="#8daa91"
+            android:text="Respiración guiada"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+</FrameLayout>
